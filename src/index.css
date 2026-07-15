@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+body {
+  background-color: #0A1B2A;
+  color: #EAF2F8;
+}
+
+::selection {
+  background-color: #FFB015;
+  color: #0A1B2A;
+}
+
+:focus-visible {
+  outline: 2px solid #FFB015;
+  outline-offset: 3px;
+}
+
+/* Blueprint corner registration mark */
+.reg-mark {
+  position: relative;
+}
+.reg-mark::before,
+.reg-mark::after {
+  content: '';
+  position: absolute;
+  background: #2E5171;
+}
+.reg-mark::before {
+  width: 1px;
+  height: 14px;
+  top: -7px;
+  left: 0;
+}
+.reg-mark::after {
+  width: 14px;
+  height: 1px;
+  top: 0;
+  left: -7px;
+}
