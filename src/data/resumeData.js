@@ -8,8 +8,7 @@ export const profile = {
   linkedin: 'in/smahmadi77',
   linkedinUrl: 'https://linkedin.com/in/smahmadi77',
   about:
-    "Technology and art have always been intertwined interests, and today that shows up in front-end work — building interfaces with the same attention to craft as a design piece. Focused on advancing team goals while keeping the team's own working spirit intact.",
-}
+    "As a Frontend Developer , I specialize in building dynamic, responsive web applications with React.js, Next.js, TypeScript and CSS freamworks. My work focuses on designing and implementing user-friendly interfaces, develop large-scale apps based on design patterns and ensuring cross-browser compatibility. Collaborating within agile teams, I contribute to creating seamless digital experiences while maintaining high code quality and performance standards."}
 
 export const languages = [
   { name: 'Farsi', level: 'Native' },
@@ -92,25 +91,41 @@ export const experience = [
     blurb:
       'ICT security company focused on information & communication security and security software development.',
     points: [
-      'Increased test and TypeScript coverage across the codebase',
-      'Implemented authorization and authentication logic',
+      'Increased Test and TypeScript coverage across the codebase',
+      'Implemented or Refactored Authorization and Authentication logic',
       'Elevated DX with auto-import components and Vite — 10x faster HMR',
       'Refactored and optimized app modules through dependency upgrades and new design patterns',
-      'Resolved tech-lead review feedback on merge requests in GitLab',
+      'Resolved tech-lead review feedbacks and comments on merge requests in GitLab',
       'Built reusable custom React hooks and HOCs for shared stateful logic',
       'Implemented UI to the company design system "GraphX" and its design tokens',
+      'Addressed and resolved all QA-reported test issues in Jira throughout the alpha release phase',
+      'Addressed and resolved all PO, Support-team (reported usually from customer) and Designer issues in Jira throughout the beta release phase',
       'Supported teammates on technical issues',
     ],
     projects: [
       {
-        name: 'Vault — Software Kiosk',
-        date: '2025',
+        name: 'Graph Software Kiosk System',
+        date: 'from 2024 to 2026 · 2.5 months',
         location: 'Tehran',
-        stack: ['React', 'Redux', 'OAuth2', 'RBAC'],
-        link:null,
+        stack: ['React/Vite', 'Redux toolkit', 'OAuth2/OIDC', 'RBAC', 'vitest/jest', 'TS', 'axios'],
+        view:{
+          address: "https://graph-inc.ir/products/fam/graph-fam",
+          image_url:"/personal-website/assets/images/vault.png",
+          title: "it's not available, because it's a internal app of company, you can see it in graph-inc.ir products diagram as 'kiosk' ",
+        },
         description:
-          'Secure hosted file service (similar in spirit to Google Drive). ',
-        points:["Built authorization pages and actions with RBAC-tree-based access control, OAuth2 / OIDC authentication, Personal / Shared / Team spaces, and a notification and upload flow managed through Redux."]
+          'The Graph Software Kiosk System is designed to hosting files and facilitate secure file transfers between public networks (internet) and private/isolated networks, and vice versa. The system is built on a cloud-based infrastructure, deployed as an on-premise private cloud within the customer organization. ',
+        points:[
+          'Resolved all TypeScript warnings and errors across the entire application.',
+          'Zeroed out the "any" type in TypeScript and Set type on all functions, components and etc.',
+          'Implemented Unit and Integration tests with Vitest, achieving approximately 40% test coverage across the application.',
+          'Addressed and resolved all QA-reported test issues in Jira throughout three alpha release phases (Iterations 6–9).',
+          'Implemented Authorizing logic on pages, actions and providing different access to diff users based on RBAC tree roles.',
+          'Implemented Authentication logic OAuth2/OIDC.',
+          'implemented Share and Team pages and Refactored Personal page.',
+          'Implemented notification and upload files/folders.',
+          'Eliminate ways in which cyberattacks could occur like XSS.'
+        ]
       },
       {
         name: 'graph-inc.ir',
@@ -118,9 +133,18 @@ export const experience = [
         location: 'Tehran',
         stack: ['Next.js','Redux'],
         description:"Official website of Graph-inc company.",
-        link: "www.graph-inc.ir",
-        points:
-          'Migrated the company site from React to Next.js. Added Blog and Job Opportunity pages. Raised the Lighthouse score from 23 to 75 through semantic HTML and Core Web Vitals work, and closed off XSS/CSRF attack vectors.',
+        points: [
+          'Migrated from React to Next.js 14',
+          'Add Blog and Job opportunity pages.',
+          'Add lazy-loading on parts of app that are not in hero section to dcrease first loading time ',
+          'Improve SEO rank by semantic elements and etc.',
+          'Refactor Demo form and use react-hook-form, zod packages.',
+        ],
+        view: {
+          address:"https://graph-inc.ir",
+          image_url:"/personal-website//assets/images/graph-inc.ir-screenshot.png",
+          title: "view",
+        },
       },
     ],
   },
@@ -144,9 +168,15 @@ export const experience = [
         location: 'Tabriz',
         stack: ['React', 'Responsive Design'],
         description:"Shopping website",
-        link: null,
-        points:
-          "A customer-facing website built from Adobe Illustrator designs, converted into fully responsive React pages — one of the company's client launches.",
+        points: [
+          'Developed and launched by React.js.',
+          'Converted UI/UX designs into responsive web pages and pixel-perfect'
+        ],
+        view: {
+          address:null,
+          // image_url:"",
+          title: "Dismissed by company",
+    }
       },
     ],
   },

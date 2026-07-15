@@ -54,3 +54,13 @@ body {
   top: 0;
   left: -7px;
 }
+.disabled{
+  border: gray;
+  background-color: gray;
+  color: rgb(68, 62, 62);
+}
+.disabled:hover{
+  border: gray;
+  background-color: gray !important;
+  color: rgb(68, 62, 62) !important;
+}
