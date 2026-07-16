@@ -23,7 +23,7 @@ export default function Projects() {
   return (
     <section id="projects" className="py-24 px-6 border-b border-line">
       <div className="max-w-6xl mx-auto">
-        <SectionHeader fig="FIG. 04" title="Projects" />
+        <SectionHeader fig="FIG. 03" title="Projects" />
 
         <div className="grid gap-6">
           {projects.map((p, i) => (

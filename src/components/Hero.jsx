@@ -3,7 +3,7 @@ import { profile } from '../data/resumeData'
 export default function Hero() {
   return (
     <section id="top" className="relative pt-32 pb-20 px-6 border-b border-line overflow-hidden">
-      <div className="max-w-6xl mx-auto grid lg:grid-cols-[1.4fr_1fr] gap-12 items-start">
+      <div className="max-w-6xl mx-auto  gap-12 items-start">
         <div>
           <p className="font-mono text-xs tracking-[0.2em] text-signal mb-4">
             FIG. 01 — INTRODUCTION
@@ -12,7 +12,7 @@ export default function Hero() {
             {profile.name}
           </h1>
           <p className="mt-4 font-mono text-sm tracking-wide text-trace uppercase">
-            {profile.title} · {profile.tagline}
+            {profile.title} · {profile.tagline} . {profile.age} years old
           </p>
           <p className="mt-6 max-w-xl text-inkMuted leading-relaxed">{profile.about}</p>
 
@@ -30,9 +30,7 @@ export default function Hero() {
               VIEW EXPERIENCE
             </a>
           </div>
-        </div>
-
-       
+        </div> 
       </div>
     </section>
   )

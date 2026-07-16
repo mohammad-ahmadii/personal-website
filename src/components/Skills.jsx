@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <section id="skills" className="py-24 px-6 border-b border-line">
       <div className="max-w-6xl mx-auto">
-        <SectionHeader fig="FIG. 03" title="Skills" />
+        <SectionHeader fig="FIG. 04" title="Skills" />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillGroups.map((group) => (

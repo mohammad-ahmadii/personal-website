@@ -3,6 +3,7 @@ export const profile = {
   title: 'Front-End Developer',
   tagline: '3 years of experience',
   location: 'Tehran, Iran',
+  age: "28",
   phone: '+98 910 554 8773',
   email: 'sm.ahmadi77@yahoo.com',
   linkedin: 'in/smahmadi77',

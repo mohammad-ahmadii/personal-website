@@ -1,6 +1,6 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
-import About from './components/About'
+import Languages from './components/Languages'
 import Timeline from './components/Timeline'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
@@ -13,11 +13,12 @@ export default function App() {
       <Nav />
       <main>
         <Hero />
-        <About />
+        
         <Timeline />
         <Projects />
         <Skills />
         <Education />
+        <Languages />
       </main>
       <Footer />
     </div>
