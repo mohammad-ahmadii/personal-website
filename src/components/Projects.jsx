@@ -76,8 +76,8 @@ export default function Projects() {
                 ))}
                 </div>
                 <div className='flex justify-center'>
-                  {p.view.address && <a  href={p.view.address} target="_blank" rel="noreferrer"className='text-trace border px-3 py-2 rounded border-trace hover:bg-trace hover:text-black ' >{p.view.title}</a>}
-                  {!p.view.address && <a className='btn btn-primary text-trace border px-3 py-2 rounded border-trace hover:bg-trace hover:text-black disabled' aria-disabled="true" href={p.link}>{p.view.title}</a>}
+                  {p.view.address && <a  href={p.view.address} target="_blank" rel="noreferrer"className='text-trace border px-3 py-2 rounded border-trace hover:bg-trace hover:text-black flex gap-2 items-center' ><span>view</span> <ArrowRightFillIcon  /> </a>}
+                  {!p.view.address && <a className='btn btn-primary text-trace border px-3 py-2 rounded border-trace hover:bg-trace hover:text-black disabled flex gap-2 items-center' aria-disabled="true" href={p.link} title={p.view.title}><span>view</span> <ArrowRightFillIcon  /> </a>}
                 </div>
               </div>
             </article>

@@ -1,4 +1,8 @@
 import { profile } from '../data/resumeData'
+import MapPin2LineIcon   from 'remixicon-react/MapPin2LineIcon';
+import MailLineIcon from 'remixicon-react/MailLineIcon';
+import PhoneLineIcon from 'remixicon-react/PhoneLineIcon';
+import LinkedinLineIcon from 'remixicon-react/LinkedinLineIcon';
 
 export default function Footer() {
   return (
@@ -12,29 +16,29 @@ export default function Footer() {
         <div className="flex flex-wrap gap-4">
           <a
             href={`mailto:${profile.email}`}
-            className="px-5 py-2.5 bg-signal text-bg font-mono text-xs tracking-wider hover:bg-ink transition-colors"
+            className="flex gap-2 items-center px-5 py-2.5 bg-signal text-bg font-mono text-xs tracking-wider hover:bg-ink transition-colors"
           >
-            {profile.email}
+            <MailLineIcon />{profile.email}
           </a>
           <a
             href={`tel:${profile.phone.replace(/\s/g, '')}`}
-            className="px-5 py-2.5 border border-lineStrong text-ink font-mono text-xs tracking-wider hover:border-signal hover:text-signal transition-colors"
+            className="flex gap-2 items-center  px-5 py-2.5 border border-lineStrong text-ink font-mono text-xs tracking-wider hover:border-signal hover:text-signal transition-colors"
           >
-            {profile.phone}
+            <PhoneLineIcon />{profile.phone}
           </a>
           <a
             href={profile.linkedinUrl}
             target="_blank"
             rel="noreferrer"
-            className="px-5 py-2.5 border border-lineStrong text-ink font-mono text-xs tracking-wider hover:border-signal hover:text-signal transition-colors"
+            className=" flex gap-2 items-center px-5 py-2.5 border border-lineStrong text-ink font-mono text-xs tracking-wider hover:border-signal hover:text-signal transition-colors"
           >
-            LinkedIn — {profile.linkedin}
+            <LinkedinLineIcon /><span>LinkedIn — {profile.linkedin}</span>
           </a>
-          <span
-            className="px-5 py-2.5 border border-lineStrong text-ink font-mono text-xs tracking-wider hover:border-signal hover:text-signal transition-colors"
+          <a
+            className="flex gap-2 items-center px-5 py-2.5 border border-lineStrong text-ink font-mono text-xs tracking-wider hover:border-signal hover:text-signal transition-colors"
           >
-            {profile.location}
-          </span>
+            <MapPin2LineIcon />{profile.location}
+          </a>
         </div>
 
         <div className="mt-16 pt-8 border-t border-line flex flex-wrap justify-between gap-4 font-mono text-[11px] text-inkMuted">
